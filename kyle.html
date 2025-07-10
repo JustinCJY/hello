@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
+    <link rel="stylesheet" href="./kyle.css"/>
 </head>
 <body>
    <h1>Yu-Kai Chen</h1> 
-  
    <a href="https://www.google.com/?hl=zh_TW" target="_blank">google link</a><img src="./陳俞愷.jpg" alt="im a c">
    <body>
     <header>
-        <h1>
-            <center>Kai Resume</center>
+        <h1 class="header">
+        <center>Kai Resume</center>
         </h1>
         <img width="100%" src="https://assets.dm.rccl.com/is/image/RoyalCaribbeanCruises/royal/ports-and-destinations/destinations/perfect-day/perfect-day-at-cococay-icon-arrival-turquoise-ocean-aerial-overwater-cabanas.jpg?$1440x1080$" alt="im a c"
-    </header>
+    </header>  
     <aside></aside>
 </body>
    <strong>
@@ -37,6 +37,70 @@
             <li>東海大學<small>2018-2022</small></li>
         </ul>
     </div>
+    Calender:
+    <table border="1" style="width: 100%">
+        <thead>
+         <tr>
+            <th></th>
+            <th>Morning</th>
+            <th>Noon</th>
+            <th>Night</th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+            <td>Skill</td>
+            <td>Basketball</td>
+            <td>Baseball</td>
+            <td>Soccer</td>
+         </tr>
+         <tr>
+            <td>Food</td>
+            <td>Protien</td>
+            <td>Carbon</td>
+            <td>Fiber</td>
+         </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Result</td>
+                <td colspan="3">Build Body</td>
+            </tr>
+        </tfoot>
+    </table>
+    <form action="">
+        <input type="text" placeholder="Please input your name">
+        <input type="number" placeholder="Please iput your age">
+        <input type="tel" placeholder="Please iput your phone number">
+        <input type="email" placeholder="Please iput your email">
+        <input type="password" placeholder="Please iput your password">
+         <div>
+            Do
+            <label><input type="radio" name="Do" value="yes"/>Yes</label>
+            <label><input type="radio" namw="Not to do" value="no"/>No</label>
+        </div>
+        <div>
+            Nationality
+            <select name="" id="">
+                 <option value="TW">Taiwan</option>  
+                 <option value="JP">Japan</option> 
+                 <option value="HK">Hong Kong</option>
+                 <option value="KR">Korea</option>
+            </select>
+        </div>
+        <div>
+            Fruit
+            <label><input type="checkbox" name="fruit"/>Apple</label>
+            <label><input type="checkbox" name="fruit"/>Banana</label>
+            <label><input type="checkbox" name="fruit"/>Watermelon</label>
+        </div>
+        <div>
+            Note
+            <textarea name="" id=""></textarea>
+        </div>
+
+        <button>Send Out</button>
+    </form>
    </p>
 </body>
 </html>
