@@ -1,14 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>黃清熙的網站</title>
-</head>
-<body>
-    <h1>黃清熙</h1>
-    <p>台灣人</p>
-    <img src="./12121.png" alt="">
-    <a href="https://tw.yahoo.com/"></a>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .fat {
+      color: red;
+      font-weight: bold;
+    }
+
+    .name {
+      font-size: 100px;
+    }
+
+    .btn {
+      background: black;
+      color: white;
+      margin: 20px;
+      border-color: blanchedalmond;
+    }
+  </style>
+
+  <body>
+    <header class="header">
+      <center class="name">Cing SI Huang Resume</center>
+      <img width="100%" src="https://images.unsplash.com/photo-1751013781844-fa6a78089e49?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+      <a href="https://tw.yahoo.com/" target="_blank">前往連結</a>
+    </header>
+    <aside></aside>
+    <main>
+      <h3>特色</h3>
+      <ul>
+        <li>睡神</li>
+        <li>無時無刻</li>
+      </ul>
+
+      <p>
+        <span>想你的<br /></span>
+        <span>夜多希望你在我身邊</span>
+      </p>
+
+      <span>ㄟ你好</span>
+
+      <div class="education fat" id="education">
+        <h2>學歷</h2>
+        <ul>
+          <li>嶺東科技大學<small>2021-2025</small></li>
+        </ul>
+      </div>
+
+      <p>行事曆</p>
+      <table border="1" style="width: 100%;">
+        <thead>
+          <tr>
+            <th></th>
+            <th>早上</th>
+            <th>中午</th>
+            <th>晚安</th>
+          </tr>
+          <tr>
+            <td>專業技能</td>
+            <td>煎</td>
+            <td>包</td>
+            <td>炸</td>
+          </tr>
+          <tr>
+            <td>飲食</td>
+            <td>蔥抓餅</td>
+            <td>飯糰</td>
+            <td>麥克雞塊</td>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td>結論</td>
+            <td colspan="3">愛吃鬼小胖</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form action="">
+        <input type="text" placeholder="你的姓名">
+        <input type="number" placeholder="你的年齡">
+        <input type="tel" placeholder="行動電話">
+        <input type="password" placeholder="密碼">
+        <input type="email" placeholder="你的信箱">
+        <div>
+          彭于晏
+         <label><input type="checkbox" name="handsome" value="yes">是</label>
+         <label><input type="checkbox" name="handsome" value="no">否</label>
+        </div>
+        
+        <div>
+          喜歡的水果
+          <label><input type="radio" name="fruit" value="pineapple">鳳梨</label>
+          <label><input type="radio" name="fruit" value="mango">芒果</label>
+          <label><input type="radio" name="fruit" value="pitaya">火龍果</label>
+        </div>
+
+        <div>
+          備註
+          <textarea  name="" id=""></textarea>
+        </div>
+        <div>
+          國家
+          <select name="" id="">
+            <option value="TW">台灣</option>
+            <option value="JP">日本</option>
+            <option value="KR">韓國</option>
+            <option value="CH">中國</option>
+
+          </select>
+        </div>
+
+        <button class="btn">送出</button>
+      </form>
+    </main>
+  </body>
 </html>
