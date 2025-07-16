@@ -1,6 +1,63 @@
-#id名稱介紹
+ /* id名稱介紹 */
+#id{}
 
 .header {background-color: violet;}
 
 #cy {background-color: rgb(188, 238, 130);}
 
+
+*{font-size: 1.5rem;}
+ /* 通用選擇器 */
+
+.red-text, 
+.red{
+color: red;
+}
+/* html裡要加入class=red。有","="or" */
+
+.blue-text.blue {
+  color: blue;
+}
+/* 沒有","="and" */
+ /* (無空格).blue-text.blue之間不能空格  */
+ /* blue-text blue */
+
+
+.green-text .green {
+  color: green;
+}
+/* (有空格)父子階*/
+/*  */
+
+.pink {
+  color: pink !important;
+}
+/* 加入" !important"為最優先*/
+
+
+/* 彩虹色 */
+.bbb {
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+/* 字距 */
+.my-btn {
+  /* background-color: aqua; 背景 */
+  background-image: url(./1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center; /* 文字水平置中 */
+  vertical-align: middle; /* 文字垂直置中 */
+  /* padding: 10px; 內距 */
+  /* padding-top: 15px; */
+  /* padding: 15px 10px 5px 20px; 上 右 下 左 */
+  padding: 10px 20px; /* 上下 左右 */
+  margin: 10px; /* 外距 */
+  border-radius: 20px; /* 圓角 */
+  font-weight: 900; /* 字體粗細 */
+  width: 100px; /* 寬度 */
+  height: 50px; /* 高度*/
+  box-shadow: 2px 2px 2px 2px gray; /* 陰影 */
+  /* margin: 0 auto; */
+}
