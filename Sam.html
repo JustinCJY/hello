@@ -74,7 +74,7 @@
         </tbody>
         <tfoot>
           <tr>
-            <td>結論</td>
+            <td class="blue-text blue">結論</td>
             <td colspan="3">廢人一個</td>
           </tr>
         </tfoot>
@@ -113,6 +113,42 @@
         </div>
         <div id="cy">
         <button>送出囉</button>
+
+<div id="myid">id選擇器用法</div>
+
+<!-- 顏色層級關係 -->
+<div>
+  <span class="red">通用,"or"兩個獨立</span>
+</div>
+<div>
+  <span class="blue-text blue">and",父親優先</span>
+</div>
+<div class="green-text">
+  <span class= "green ">父子階</span>
+</div>
+<div>
+  <span class="pink">!important"為最優先</span>
+</div>
+<div>
+  <span class="bbb">彩虹色</span>
+</div>
+
+
+<div class="cercle">圓形</div>
+<!-- 按鈕,用div較正常,用button較易出現意想不到的結果 -->
+ <!-- 如下 -->
+<div class="my-btn">my-btn</div>
+<button class="red-text">按鈕</button>
+   
+<span id="pink" class="red-important yellow">color text</span>
+<span class="blue">
+<span class="blue-text yellow">color text</span>
+  </span>
+ 
+<div class="message"data-count="10" onclick="this.classList.toggle('move')">message</div>
+<div class="box">
+<div class="box-center">center</div>
+
       </div>
       </form>
     </main>
