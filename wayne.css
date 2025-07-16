@@ -1,0 +1,165 @@
+.header {
+  background-color: aqua;
+}
+/* 配合class選擇器 */
+
+#handsome {
+  background-color: rgb(255, 153, 0);
+}
+/* 配合id選擇器 */
+
+div {
+}
+/* 只要有div選擇器都吃 */
+
+* {
+  font-size: 1.5rem;
+}
+/* 這是全部選擇器都吃 */
+
+.yellow-text .yellow {
+  color: yellow;
+}
+/* 空格是父子階關係，兩者需按順序且同時存在才會有效果 */
+
+.blue-text,
+.blue {
+  color: blue;
+}
+/* 逗號邏輯是or，打其中一個就會吃效果 */
+
+.green.green-text {
+  color: green;
+}
+/* 中間沒空格邏輯是and，兩個都要打才會吃效果 */
+
+.rainbow {
+  background: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    purple
+  );
+}
+
+.photo-sticker {
+  display: block;
+  margin: 0 auto;
+}
+
+.my-btn {
+  /* background-color: aqua; 背景 */
+  /* background-image: url(./12121.png); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center; /* 文字水平置中 */
+  vertical-align: middle; /* 文字垂直置中 */
+  /* padding: 10px; 內距 */
+  /* padding-top: 15px; */
+  /* padding: 15px 10px 5px 20px; 上 右 下 左 */
+  padding: 10px 10px; /* 上下 左右 */
+  margin: 10px; /* 外距 */
+  border-radius: 50%; /* 圓角 */
+  font-weight: 900; /* 字體粗細 */
+  width: 100px; /* 寬度 */
+  height: 100px; /* 高度*/
+  /* box-shadow: 2px 2px 2px 2px gray; 陰影 */
+  /* margin: 0 auto; */
+  border: 10px groove rgba(234, 10, 167, 0.733);
+}
+
+.my-btn:hover{
+    background-color: blueviolet;
+}
+
+.my-btn:active{
+ box-shadow: 2px 2px 2px 2px gray; 
+}
+/* hover&active是偽類選擇器 */
+
+.circle {
+  background: #fdfd;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  line-height: 100px;
+}
+/* 圓形的打法 */
+
+.message{
+    padding: 3px 6px;
+    border: dimgray solid 1px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    color: rgb(243, 138, 10);
+    display: inline-block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.message:after{
+    content: "attr(data-count)";
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    font-size: 0.5rem;
+    color: red;
+}
+
+.message:hover{
+    padding: 3px 20px;
+    transition: all 0.5s ease-in-out;
+}
+/* ease-in-out是動畫呈現效果，有很多種 */
+/* 「transform」在 CSS 中的意思是「變形、轉換」，用來讓 HTML 元素旋轉、縮放、位移、傾斜等視覺上的變化。 */
+
+.message.move{
+    right: 50%; /* 右邊為基準推50%，所以會往左 */
+    opacity: 0; /* 透明度 */
+    transform: translateX(50%)
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    position: relative;
+    overflow: auto; /* 在 CSS 中，overflow是用來控制「當內容超出容器大小時，要怎麼處理」的屬性。 */
+}
+
+/* 
+visible 預設值，內容超出就照樣顯示出來  
+hidden  超出內容會被裁切、隱藏起來    
+scroll  不管有沒有溢出，都顯示捲軸    
+auto    自動判斷，如果內容超出才出現捲軸  */
+
+.box-center{
+    background-color: blue;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.5rem;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+.flex-box{
+    border: 1px solid red;
+    font-size: medium;
+    display: flex;
+    width: 400px;
+    height: 400px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+

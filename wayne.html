@@ -7,36 +7,31 @@
     <style>
       .fat {
         font-weight: bold;
-        font-size: 1.5em;
       }
     </style>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./wayne.css" />
   </head>
   <body>
     <main>
-      <header class="header">
+      <header>
         <h1>
           <center>wayne's resume</center>
         </h1>
-
-        <img
-          src="./1000_F_1387610431_skZRXqzFSHt7szt2ajzXyyjz4u0Q0h1h.jpg"
-          alt=""
-          style="width: 100%"
-        />
+        <img class="photo-sticker" alt="" style="width: 100%" />
       </header>
       <a
         href="https://www.upmedia.mg/news_info.php?Type=5&SerialNo=224003"
         target="_blank"
       >
         <img
-          src="./劉鎮瑋 n8n課程.png"
+          class="photo-sticker"
+          src="./images.jpg"
           alt="i am a post"
           style="width: 200px; height: auto"
         />
       </a>
-      <strong
-        >特長
+      <strong>
+        <span>特長</span>
         <ul>
           <li>胸毛</li>
           <li>程式</li>
@@ -44,10 +39,10 @@
         </ul>
       </strong>
       <p>
-        <span>簡介</span>
+        <span class="red-text">簡介</span>
         <span>我是wayne</span>
       </p>
-      <span>我是wayne</span>
+      <div class="rainbow">我是wayne</div>
       <div class="education fat" id="education" style="color: red">
         學歷
         <ul>
@@ -101,18 +96,18 @@
           <label> <input type="checkbox" />是</label>
           <label> <input type="checkbox" />否</label>
         </div>
-        <div>
-          喜歡的水果
+        <div class="yellow-text">
+          <span class="blue yellow">喜歡的水果</span>
           <label><input type="radio" name="fruit" />蘋果</label>
           <label><input type="radio" name="fruit" />香蕉</label>
           <label><input type="radio" name="fruit" />橘子</label>
         </div>
         <div>
-          備註
+          <span class="blue">備註</span>
           <textarea name="" id=""></textarea>
         </div>
         <div>
-          國家
+          <span class="green green-text">國家</span>
           <select name="" id="">
             <option value="tw">台灣</option>
             <option value="jp">日本</option>
@@ -120,8 +115,38 @@
             <option value="cn">中國</option>
           </select>
         </div>
-        <button>送出</button>
+        <div class="my-btn" style="color: aquamarine">送出</div>
       </form>
+      <div
+        class="message"
+        data-count="10"
+        onclick="this.classList.toggle('move')"
+      >
+        message
+      </div>
+      <div class="box">
+        <div class="box-center">center</div>
+        <div>context</div>
+        <div>context</div>
+        <div>context</div>
+        <div>context</div>
+        <div>context</div>
+        <div>context</div>
+        <div>context</div>
+        <div>context</div>
+        <div>context</div>
+        <div>context</div>
+        <div>context</div>
+        <div>context</div>
+        <div>context</div>
+      </div>
+      <div class="flex-box">
+        <div style="font-size: 0.5rem">context</div>
+        <div style="font-size: 0.5rem">context</div>
+        <div style="font-size: 0.5rem">context</div>
+        <div style="font-size: 0.5rem">context</div>
+        <div style="font-size: 0.5rem">context</div>
+      </div>
     </main>
   </body>
 </html>
