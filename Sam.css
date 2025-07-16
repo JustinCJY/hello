@@ -1,5 +1,7 @@
  /* id名稱介紹 */
-#id{}
+#myid{
+  color: seagreen;
+}
 
 .header {background-color: violet;}
 
