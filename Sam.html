@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="Sam.css" />
   </head>
   <body>
-    <header>
+    <header class="header" id="cy">
       <h1>
         <center>Sam的履歷</center>
       </h1>
@@ -23,9 +23,11 @@
         src="https://doqvf81n9htmm.cloudfront.net/data/crop_article/88902/FotoJetedd.jpg_1140x855.jpg"
       />
     </header>
+  </header>
 
     <aside></aside>
     <main>
+     
       <h1>Sam</h1>
       <img src="./圖1.jpg" alt="i am a cat" />
       <a href="https://google.com" target="_blank">google link</a>
@@ -72,7 +74,7 @@
         </tbody>
         <tfoot>
           <tr>
-            <td>結論</td>
+            <td class="blue-text blue">結論</td>
             <td colspan="3">廢人一個</td>
           </tr>
         </tfoot>
@@ -109,7 +111,61 @@
             <option value="EU">歐洲</option>
           </select>
         </div>
+        <div id="cy">
         <button>送出囉</button>
+
+<div id="myid">id選擇器用法</div>
+
+<!-- 顏色層級關係 -->
+<div>
+  <span class="red">通用,"or"兩個獨立</span>
+</div>
+<div>
+  <span class="blue-text blue">and",父親優先</span>
+</div>
+<div class="green-text">
+  <span class= "green ">父子階</span>
+</div>
+<div>
+  <span class="pink">!important"為最優先</span>
+</div>
+<div>
+  <span class="bbb">彩虹色</span>
+</div>
+
+
+<div class="cercle">圓形</div>
+<!-- 按鈕,用div較正常,用button較易出現意想不到的結果 -->
+ <!-- 如下 -->
+<div class="my-btn">my-btn</div>
+<button class="red-text">按鈕</button>
+   
+<span id="pink" class="red-important yellow">color text</span>
+<span class="blue">
+<span class="blue-text yellow">color text</span>
+  </span>
+ 
+<div class="message"data-count="10" onclick="this.classList.toggle('move')">message</div>
+<div class="box">
+<div class="box-center">center</div>
+
+<div class="box">
+ <div class="box-center">center</div>
+  <h1>text</h1>
+  <h1>text</h1>
+  <h1>text</h1>
+  <h1>text</h1>
+  <h1>text</h1>
+</div>
+
+<div class="flex-box">
+ <div style="font-size: 0.5rem">context</div>
+ <div style="font-size: 0.5rem">context</div>
+ <div style="font-size: 0.5rem">context</div>
+ <div style="font-size: 0.5rem">context</div>
+</div>
+
+      </div>
       </form>
     </main>
   </body>
